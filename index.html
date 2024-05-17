@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de Imágenes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .title {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Subir Tu Imagen</div>
+        <input type="file" id="inputImagen" accept="image/*">
+        
+        <div class="title">Imagen Original</div>
+        <img id="imagenOriginal" src="#" alt="Imagen Original">
+        
+        <div class="title">Función 1</div>
+        <canvas id="lienzoRedimensionado1"></canvas>
+        
+        <div class="title">Función 2</div>
+        <canvas id="lienzoRedimensionado2"></canvas>
+        
+        <div class="title">Imagen Recortada</div>
+        <canvas id="lienzoRecortado"></canvas>
+        
+        <div class="title">Imagen Espejada</div>
+        <canvas id="lienzoEspejado"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+</body>
+</html>
